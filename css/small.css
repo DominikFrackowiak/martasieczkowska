@@ -1,0 +1,335 @@
+.xs-full, .m-full, .l-full, .xl-full {
+  display: none;
+}
+
+.s-full {
+  display: block;
+}
+
+img.s-full {
+  width: 516px;
+}
+
+img.s-full.ganna-glass-white {
+  width: 200px;
+}
+
+img.s-full.lasek-logo-full {
+  width: 247px;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+}
+
+div.line {
+  width: 516px;
+}
+
+/*SEKCJA MINIATUR*/
+section.thumbnails {
+  height: 935px;
+  width: 516px;
+}
+
+section.thumbnails .thumbnails-wrapper {
+  height: 884px;
+  top: 28px;
+}
+
+section.thumbnails.graphic-display .thumbanils-wrapper,
+section.thumbnails.illustration-display .thumbanils-wrapper {
+  height: 432px;
+}
+
+/*SEKCJA MINIATUR - POJEDYNCZE OBRAZKI*/
+.img-wrapper {
+  height: 206px;
+  width: 246px;
+  margin-bottom: 20px;
+}
+
+section.thumbnails.graphic-display .img-wrapper,
+section.thumbnails.graphic-display .img-wrapper,
+section.thumbnails.illustration-display .img-wrapper,
+section.thumbnails.illustration-display .img-wrapper {
+  margin-bottom: 20px;
+}
+
+section.thumbnails.graphic-display .img-wrapper-ganna,
+section.thumbnails.graphic-display .img-wrapper-eabs {
+  margin-right: 20px;
+}
+
+section.thumbnails.illustration-display .img-wrapper-goat,
+section.thumbnails.illustration-display .img-wrapper-seagull {
+  margin-right: 20px;
+}
+
+.thumbnail-1 {
+  background-image: url("../IMG/MINIATURY_576/KOZA_1x.jpg");
+}
+
+.thumbnail-2 {
+  background-image: url("../IMG/MINIATURY_576/PIGEON_1x.jpg");
+}
+
+.thumbnail-3 {
+  background-image: url("../IMG/MINIATURY_576/GLASS_1x.jpg");
+}
+
+.thumbnail-4 {
+  background-image: url("../IMG/MINIATURY_576/MEWA_1x.jpg");
+}
+
+.thumbnail-5 {
+  background-image: url("../IMG/MINIATURY_576/URBANEK_1x.jpg");
+}
+
+.thumbnail-6 {
+  background-image: url("../IMG/MINIATURY_576/EABS_1x.jpg");
+}
+
+.thumbnail-7 {
+  background-image: url("../IMG/MINIATURY_576/LASEK_1x.jpg");
+}
+
+.thumbnail-8 {
+  background-image: url("../IMG/MINIATURY_576/ZAMEK_1x.jpg");
+}
+
+.img-description {
+  line-height: 22px;
+}
+
+.img-description p {
+  font-size: 20px;
+  left: 14px;
+}
+
+section.hidden-section p br {
+  display: none;
+}
+
+section.about,
+section.goat,
+section.pigeon,
+section.ganna-glass,
+section.mewa,
+section.logo-urbanek,
+section.eabs,
+section.lasek,
+section.zamek {
+  width: 516px;
+}
+
+section.hidden-section h2 {
+  top: 42px;
+}
+
+section.about {
+  height: 950px;
+}
+
+section.about p.about-hello {
+  top: 43px;
+}
+
+section.about div.about-experience-wrapper {
+  top: 85px;
+}
+
+section.about p.about-school-kids {
+  position: absolute;
+  top: 270px;
+}
+
+section.about .portrait-wrap {
+  top: 392px;
+  height: 442px;
+  width: 325px;
+}
+
+.portrait-wrap p.portrait-description {
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+
+section.about p.contact-me {
+  top: 845px;
+}
+
+/* UKRYTA KOZA */
+section.goat {
+  height: 780px;
+}
+
+section.goat p {
+  top: 122px;
+}
+
+section.goat img {
+  top: 173px;
+}
+
+section.pigeon {
+  height: 751px;
+}
+
+section.pigeon p {
+  top: 90px;
+}
+
+section.pigeon img {
+  top: 142px;
+}
+
+section.ganna-glass {
+  height: 1757px;
+}
+
+section.ganna-glass p {
+  top: 135px;
+  width: 482px;
+}
+
+section.ganna-glass .ganna-glass-img-wrapper {
+  top: 312px;
+  height: 1367px;
+}
+
+section.ganna-glass .ganna-glass-img-wrapper .ganna-glass-white {
+  padding-top: 85px;
+  padding-bottom: 66px;
+}
+
+section.mewa {
+  height: 1403px;
+}
+
+section.mewa p {
+  top: 89px;
+}
+
+section.mewa .section-mewa-img-wrapper {
+  top: 142px;
+  height: 1176px;
+}
+
+section.logo-urbanek {
+  height: 6109px;
+}
+
+section.logo-urbanek p {
+  top: 125px;
+  width: 482px;
+  height: 113px;
+}
+
+section.logo-urbanek .section-logo-urbanek-img-wrapper {
+  top: 275px;
+  height: 5756px;
+}
+
+section.eabs {
+  height: 2324px;
+}
+
+section.eabs p {
+  top: 135px;
+  width: 482px;
+  height: 85px;
+}
+
+section.eabs .section-eabs-img-wrapper {
+  position: absolute;
+  top: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 1984px;
+}
+
+section.eabs p.design-description {
+  top: 2180px;
+}
+
+section.lasek {
+  height: 2112px;
+}
+
+section.lasek p {
+  top: 135px;
+  width: 482px;
+  height: 118px;
+}
+
+.section-lasek-img-wrapper {
+  top: 288px;
+  height: 750px;
+}
+
+.section-lasek-img-wrapper img:last-child {
+  margin-top: 10px;
+}
+
+.section-lasek-img-wrapper img.lasek-logo-full {
+  margin: 61px auto;
+}
+
+section.zamek {
+  height: 1388px;
+}
+
+section.zamek p {
+  top: 87px;
+}
+
+section.zamek .section-zamek-img-wrapper {
+  top: 128px;
+  height: 1164px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .thumbnail-1 {
+    background-image: url("../IMG/MINIATURY_576/KOZA_2x.jpg");
+  }
+  .thumbnail-2 {
+    background-image: url("../IMG/MINIATURY_576/PIGEON_2x.jpg");
+  }
+  .thumbnail-3 {
+    background-image: url("../IMG/MINIATURY_576/GLASS_2x.jpg");
+  }
+  .thumbnail-4 {
+    background-image: url("../IMG/MINIATURY_576/MEWA_2x.jpg");
+  }
+  .thumbnail-5 {
+    background-image: url("../IMG/MINIATURY_576/URBANEK_2x.jpg");
+  }
+  .thumbnail-6 {
+    background-image: url("../IMG/MINIATURY_576/EABS_2x.jpg");
+  }
+  .thumbnail-7 {
+    background-image: url("../IMG/MINIATURY_576/LASEK_2x.jpg");
+  }
+  .thumbnail-8 {
+    background-image: url("../IMG/MINIATURY_576/ZAMEK_2x.jpg");
+  }
+}
+/*# sourceMappingURL=small.css.map */

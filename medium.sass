@@ -1,0 +1,300 @@
+.xs-full, .s-full, .l-full, .xl-full, .mobile-nav, .mobile-head
+  display: none
+
+.m-full
+  display: block
+
+/* HEADER DUZE EKRANY*/
+header.big-screen-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 668px
+
+/*SEKCJA MINIATUR*/
+section.thumbnails
+  height: 608px
+  width: 668px
+
+section.thumbnails .thumbnails-wrapper
+  height: 585px
+  top: 23px
+
+section.thumbnails.graphic-display .thumbanils-wrapper,
+section.thumbnails.illustration-display .thumbanils-wrapper
+  display: grid
+  grid-template-columns: 210px 210px 210px
+  grid-template-rows: 195px 195px
+  height: 368px
+  width: 668px
+  .img-wrapper:last-child
+    transform: translateX(0)
+
+/*SEKCJA MINIATUR - POJEDYNCZE OBRAZKI*/
+.img-wrapper
+  height: 175px
+  width: 210px
+  margin-bottom: 20px
+
+.img-wrapper:last-child
+  transform: translateX(-109%)
+
+.thumbnail-1
+  background-image: url('../IMG/MINIATURY_768/KOZA_1x.jpg')
+.thumbnail-2
+  background-image: url('../IMG/MINIATURY_768/PIGEON_1x.jpg')
+.thumbnail-3
+  background-image: url('../IMG/MINIATURY_768/GLASS_1x.jpg')
+.thumbnail-4
+  background-image: url('../IMG/MINIATURY_768/MEWA_1x.jpg')
+.thumbnail-5
+  background-image: url('../IMG/MINIATURY_768/URBANEK_1x.jpg')
+.thumbnail-6
+  background-image: url('../IMG/MINIATURY_768/EABS_1x.jpg')
+.thumbnail-7
+  background-image: url('../IMG/MINIATURY_768/LASEK_1x.jpg')
+.thumbnail-8
+  background-image: url('../IMG/MINIATURY_768/ZAMEK_1x.jpg')
+
+// UKRYTE SEKCJE
+section.about,
+section.goat,
+section.pigeon,
+section.ganna-glass,
+section.mewa,
+section.logo-urbanek,
+section.eabs,
+section.lasek,
+section.zamek
+  width: 668px
+
+section.hidden-section img
+  width: 668px
+
+section.hidden-section h2
+  top: 23px
+
+section.hidden-section p
+
+//*ABOUT*/
+section.about
+  height: 737px
+  width: 670px
+
+section.about p.about-hello
+  top: 20px
+
+section.about div.about-experience-wrapper
+  top: 70px
+
+section.about p.about-school-kids
+  position: absolute
+  top: 252px
+  width: 510px
+
+section.about .portrait-wrap
+  top: 369px
+  height: 228px
+  width: 172px
+
+section.about .portrait-wrap picture,
+  height: 228px
+  width: 172px
+
+section.about .portrait-wrap img
+  height: 228px
+  width: 172px
+
+.portrait-wrap p.portrait-description
+  display: none
+
+section.about p.contact-me
+  top: 620px
+
+// UKRYTA KOZA
+section.goat
+  height: 1573px
+section.goat p
+  top: 70px
+section.goat .img-goat
+  top: 118px
+section.goat .img-cow
+  display: block
+  top: 810px
+
+// UKRYTY PIGEON
+section.pigeon
+  height: 882px
+section.pigeon p
+  top: 70px
+section.pigeon img
+  top: 118px
+
+//* UKRYTA GANNA GLASS */
+section.ganna-glass
+  height: 1890px
+section.ganna-glass p
+  top: 112px
+  width: 482px
+section.ganna-glass .ganna-glass-img-wrapper
+  top: 280px
+  height: 1515px
+section.ganna-glass .ganna-glass-img-wrapper .ganna-glass-white
+  width: 200px
+  padding-top: 99px
+  padding-bottom: 71px
+
+//* UKRYTA MEWA */
+section.mewa
+  height: 1715px
+section.mewa p
+  top: 70px
+section.mewa .section-mewa-img-wrapper
+  top: 120px
+  height: 1509px
+
+//* UKRYTA TERESA URBANEK */
+section.logo-urbanek
+  height: 5717px
+section.logo-urbanek p
+  top: 112px
+
+section.logo-urbanek .section-logo-urbanek-img-wrapper
+  top: 260px
+  height: 5379px
+
+section.logo-urbanek img, section.logo-urbanek div.inside-wrapper
+  width: 668px
+
+section.logo-urbanek div.inside-wrapper
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+section.logo-urbanek div.inside-wrapper.first.m-full
+  height: 358px
+section.logo-urbanek div.inside-wrapper.first.l-full, section.logo-urbanek div.inside-wrapper.second.l-full, section.logo-urbanek .inside-wrapper.second.xl-full
+  display: none
+
+section.logo-urbanek img.m-5
+  width: 283px
+  order: 1
+
+section.logo-urbanek img.m-6
+  width: 368px
+  order: 0
+
+section.logo-urbanek img.m-8
+  height: 680px
+  width: auto
+  align-self: center
+
+section.logo-urbanek div.inside-wrapper.second
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  height: 414px
+
+section.logo-urbanek img.m-10
+  width: 319px
+
+section.logo-urbanek img.m-12
+  width: 329px
+  align-self: flex-end
+
+section.logo-urbanek img.m-11, section.logo-urbanek img.m-13
+  width: 517px
+
+//* UKRYTA EABS */
+section.eabs
+  height: 2414px
+
+section.eabs p
+  top: 115px
+
+section.eabs .section-eabs-img-wrapper
+  position: absolute
+  top: 219px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  height: 2105px
+  width: 680px
+
+.eabs-inner-wrapper-l, .eabs-inner-wrapper-xl
+  display: none
+.eabs-inner-wrapper-m
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+  width: 680px
+  height: 1273px
+
+section.eabs .m-full.m-4, section.eabs .m-full.m-5, section.eabs .m-full.m-6
+  width: 516px
+  height: auto
+
+section.eabs .m-full.m-2, section.eabs .m-full.m-3
+  height: 155px
+  width: auto
+  align-self: center
+
+section.eabs .m-full.m-5
+  align-self: flex-end
+
+section.eabs p.design-description
+  top: 2321px
+  left: 377px
+  text-align: left
+
+//* UKRYTY LASEK */
+
+section.lasek
+  height: 2416px
+
+section.lasek p
+  top: 115px
+
+.section-lasek-img-wrapper
+  top: 259px
+  height: 2084px
+  width: 680px
+
+.section-lasek-img-wrapper img:last-child
+  margin-top: 10px
+
+.section-lasek-img-wrapper img.lasek-logo-full
+  height: 245px
+  width: auto
+  margin: 100px auto
+
+//* UKRYTY ZAMEK */
+section.zamek
+  height: 1709px
+
+section.zamek p
+  top: 70px
+
+section.zamek .section-zamek-img-wrapper
+  top: 120px
+  height: 1503px
+
+@media (min-resolution: 2dppx)
+.thumbnail-1
+  background-image: url('../IMG/MINIATURY_768/KOZA_2x.jpg')
+.thumbnail-2
+  background-image: url('../IMG/MINIATURY_768/PIGEON_2x.jpg')
+.thumbnail-3
+  background-image: url('../IMG/MINIATURY_768/GLASS_2x.jpg')
+.thumbnail-4
+  background-image: url('../IMG/MINIATURY_768/MEWA_2x.jpg')
+.thumbnail-5
+  background-image: url('../IMG/MINIATURY_768/URBANEK_2x.jpg')
+.thumbnail-6
+  background-image: url('../IMG/MINIATURY_768/EABS_2x.jpg')
+.thumbnail-7
+  background-image: url('../IMG/MINIATURY_768/LASEK_2x.jpg')
+.thumbnail-8
+  background-image: url('../IMG/MINIATURY_768/ZAMEK_2x.jpg')

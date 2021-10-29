@@ -1,0 +1,845 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto';
+}
+
+body {
+  width: 100%;
+  font-size: 15px;
+  min-height: 100vh;
+}
+
+.inactive {
+  display: none;
+}
+
+.s-full, .m-full, .l-full, .xl-full {
+  display: none;
+}
+
+.xs-full {
+  display: block;
+}
+
+img.xs-full {
+  width: 324px;
+}
+
+img.xs-full.ganna-glass-white {
+  width: 126px;
+}
+
+img.xs-full.lasek-logo-full {
+  width: 155px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+.none {
+  display: none;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+/*WYSUWANE MENU TELEFON*/
+.mobile-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.mobile-nav.active {
+  padding-top: 13px;
+  height: 113px;
+}
+
+.mobile-nav a {
+  display: block;
+  width: 100%;
+  height: 33px;
+  text-align: center;
+  line-height: 33px;
+  color: black;
+}
+
+div.line {
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 80%;
+  height: 1px;
+  background-color: black;
+  z-index: 100;
+}
+
+/* LOGO I MENU MOBILE*/
+header.mobile-head {
+  position: relative;
+  width: 100%;
+  height: 113px;
+}
+
+.btn-menu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 57px;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 16px;
+  border: none;
+  letter-spacing: 2.5px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+}
+
+.btn-menu:focus {
+  outline: none;
+}
+
+header.mobile-head a {
+  position: absolute;
+  left: 0;
+  top: 57px;
+  width: 100%;
+  height: 57px;
+}
+
+.mobile-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 56.69px;
+}
+
+/* HEADER DUZE EKRANY*/
+header.big-screen-header {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 114px;
+}
+
+.big-screen-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130px;
+  height: 94px;
+}
+
+.header-img-logo {
+  width: 130px;
+  height: auto;
+}
+
+header.big-screen-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 114px;
+}
+
+header.big-screen-header nav a {
+  height: 14px;
+  letter-spacing: .2px;
+  padding: 10px 5px 10px 5px;
+  color: black;
+  text-decoration: none;
+}
+
+header.big-screen-header nav a.graphic-design {
+  width: 113px;
+}
+
+/*SEKCJA MINIATUR*/
+section.thumbnails {
+  position: relative;
+  height: 624px;
+  width: 324px;
+  overflow: hidden;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
+}
+
+section.thumbnails .thumbanils-wrapper {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  height: 556px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.thumbnails.graphic-display .thumbanils-wrapper,
+section.thumbnails.illustration-display .thumbanils-wrapper {
+  height: 272px;
+}
+
+/*SEKCJA MINIATUR - POJEDYNCZE OBRAZKI*/
+.img-wrapper {
+  position: relative;
+  height: 129px;
+  width: 156px;
+  padding-bottom: 50px;
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+  background-size: cover;
+}
+
+.thumbnail-1 {
+  background-image: url("../IMG/MINIATURY_360/KOZA_1x.jpg");
+}
+
+.thumbnail-2 {
+  background-image: url("../IMG/MINIATURY_360/PIGEON_1x.jpg");
+}
+
+.thumbnail-3 {
+  background-image: url("../IMG/MINIATURY_360/GLASS_1x.jpg");
+}
+
+.thumbnail-4 {
+  background-image: url("../IMG/MINIATURY_360/MEWA_1x.jpg");
+}
+
+.thumbnail-5 {
+  background-image: url("../IMG/MINIATURY_360/URBANEK_1x.jpg");
+}
+
+.thumbnail-6 {
+  background-image: url("../IMG/MINIATURY_360/EABS_1x.jpg");
+}
+
+.thumbnail-7 {
+  background-image: url("../IMG/MINIATURY_360/LASEK_1x.jpg");
+}
+
+.thumbnail-8 {
+  background-image: url("../IMG/MINIATURY_360/ZAMEK_1x.jpg");
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 16px;
+  font-family: 'Source Serif Pro', serif;
+  text-align: left;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.img-description p {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 16px;
+  font-size: 15px;
+}
+
+.thumbnail:hover .img-description {
+  opacity: 1;
+}
+
+section.thumbnails.graphic-display .img-wrapper,
+section.thumbnails.illustration-display .img-wrapper {
+  margin-bottom: 12px;
+}
+
+section.thumbnails.graphic-display .wrapper-odd,
+section.thumbnails.illustration-display .wrapper-odd {
+  margin-right: 0;
+}
+
+section.thumbnails.graphic-display .img-wrapper-ganna,
+section.thumbnails.graphic-display .img-wrapper-eabs {
+  margin-right: 12px;
+}
+
+section.thumbnails.illustration-display .img-wrapper-goat,
+section.thumbnails.illustration-display .img-wrapper-seagull {
+  margin-right: 12px;
+}
+
+section.about,
+section.goat,
+section.pigeon,
+section.ganna-glass,
+section.mewa,
+section.logo-urbanek,
+section.eabs,
+section.lasek,
+section.zamek {
+  position: absolute;
+  top: 114px;
+  height: 0;
+  width: 324px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: 'Source Serif Pro', serif;
+  -webkit-transition: -webkit-transform .9s .7s;
+  transition: -webkit-transform .9s .7s;
+  transition: transform .9s .7s;
+  transition: transform .9s .7s, -webkit-transform .9s .7s;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  opacity: 0;
+}
+
+section.hidden-section h2 {
+  position: absolute;
+  top: 38px;
+  width: 100%;
+  font-size: 30px;
+}
+
+section.hidden-section p {
+  position: absolute;
+  left: 0;
+  width: 320px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+section.hidden-section div.arrow {
+  position: absolute;
+  right: -10px;
+  bottom: 35px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 100000000;
+}
+
+section.hidden-section div.arrow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}
+
+/* UKRYTE SEKCJE NAWIGACJA PRAWO/LEWO */
+div.thumbnail-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  color: #ccc;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.thumbnail-nav .fas {
+  z-index: 10000000000000000;
+}
+
+.thumbnail-nav .fa-angle-left {
+  padding: 20px 12px 0 60px;
+}
+
+.thumbnail-nav .fa-angle-right {
+  padding: 20px 60px 0 12px;
+}
+
+section.about {
+  font-size: 15px;
+  height: 992px;
+  line-height: 1.5;
+}
+
+section.about p.about-hello {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+}
+
+section.about div.about-experience-wrapper {
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 255px;
+  height: 165px;
+}
+
+section.about div.about-experience-wrapper p {
+  width: 247px;
+}
+
+.align-right {
+  float: right;
+  text-align: right;
+}
+
+.align-left {
+  float: left;
+  text-align: left;
+}
+
+section.about p.about-school-kids {
+  position: absolute;
+  top: 283px;
+  left: 0;
+}
+
+section.about .portrait-wrap {
+  position: absolute;
+  top: 437px;
+  left: 0;
+  height: 440px;
+  width: 100%;
+}
+
+section.about .portrait-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.portrait-wrap p.portrait-description {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+
+section.about p.contact-me {
+  position: absolute;
+  top: 893px;
+  left: 0;
+}
+
+section.about .thumbnail-nav {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5px;
+  cursor: pointer;
+  z-index: 2000;
+}
+
+section.goat img {
+  position: absolute;
+  top: 167px;
+}
+
+section.goat .img-cow {
+  display: none;
+}
+
+section.goat p {
+  top: 120px;
+  padding-top: 5px;
+}
+
+section.pigeon img {
+  position: absolute;
+  top: 141px;
+}
+
+section.pigeon p {
+  top: 86px;
+}
+
+section.ganna-glass p {
+  top: 125px;
+}
+
+section.ganna-glass .ganna-glass-img-wrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 355px;
+  width: 100%;
+  height: 820px;
+}
+
+section.ganna-glass .ganna-glass-img-wrapper .ganna-glass-white {
+  padding-top: 56px;
+  padding-bottom: 42px;
+}
+
+section.mewa .section-mewa-img-wrapper {
+  position: absolute;
+  top: 139px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 740px;
+}
+
+section.mewa p {
+  top: 87px;
+}
+
+section.logo-urbanek {
+  height: 4113px;
+}
+
+section.logo-urbanek p {
+  top: 122px;
+  width: 298px;
+  height: 344px;
+}
+
+section.logo-urbanek .section-logo-urbanek-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: 355px;
+  height: 3685px;
+}
+
+section.eabs p {
+  top: 125px;
+  width: 310px;
+  height: 110px;
+}
+
+section.eabs .section-eabs-img-wrapper {
+  position: absolute;
+  top: 273px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 1238px;
+}
+
+section.eabs p.design-description {
+  position: absolute;
+  top: 1479px;
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: right;
+}
+
+section.lasek p {
+  top: 129px;
+}
+
+.section-lasek-img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: 337px;
+  height: 1100px;
+}
+
+.section-lasek-img-wrapper img:last-child {
+  margin-top: 10px;
+}
+
+.section-lasek-img-wrapper img.lasek-logo-full {
+  margin: 61px auto;
+}
+
+section.zamek p {
+  top: 85px;
+}
+
+section.zamek .section-zamek-img-wrapper {
+  position: absolute;
+  top: 139px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 735px;
+  width: 324px;
+}
+
+section.goat {
+  height: 567px;
+}
+
+section.pigeon {
+  height: 539px;
+}
+
+section.ganna-glass {
+  height: 1233px;
+}
+
+section.mewa {
+  height: 964px;
+}
+
+section.logo-urbanek {
+  height: 4102px;
+}
+
+section.eabs {
+  height: 1590px;
+}
+
+section.lasek {
+  height: 1502px;
+}
+
+section.zamek {
+  height: 950px;
+}
+
+section.about.active,
+section.goat.active,
+section.pigeon.active,
+section.ganna-glass.active,
+section.mewa.active,
+section.logo-urbanek.active,
+section.eabs.active,
+section.lasek.active,
+section.zamek.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
+/*FOOTER*/
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 51px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  z-index: 200;
+}
+
+footer .social-i {
+  margin-left: 12px;
+  color: black;
+  font-size: 19px;
+}
+
+footer .fa-instagram {
+  margin-right: 40px;
+}
+
+footer .copyright {
+  font-size: 3px;
+  color: transparent;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .thumbnail-1 {
+    background-image: url("../IMG/MINIATURY_360/KOZA_2x.jpg");
+  }
+  .thumbnail-2 {
+    background-image: url("../IMG/MINIATURY_360/PIGEON_2x.jpg");
+  }
+  .thumbnail-3 {
+    background-image: url("../IMG/MINIATURY_360/GLASS_2x.jpg");
+  }
+  .thumbnail-4 {
+    background-image: url("../IMG/MINIATURY_360/MEWA_2x.jpg");
+  }
+  .thumbnail-5 {
+    background-image: url("../IMG/MINIATURY_360/URBANEK_2x.jpg");
+  }
+  .thumbnail-6 {
+    background-image: url("../IMG/MINIATURY_360/EABS_2x.jpg");
+  }
+  .thumbnail-7 {
+    background-image: url("../IMG/MINIATURY_360/LASEK_2x.jpg");
+  }
+  .thumbnail-8 {
+    background-image: url("../IMG/MINIATURY_360/ZAMEK_2x.jpg");
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,408 @@
+.xs-full, .s-full, .m-full, .xl-full {
+  display: none;
+}
+
+.l-full {
+  display: block;
+}
+
+header.big-screen-header {
+  width: 892px;
+}
+
+/*SEKCJA MINIATUR*/
+section.thumbnails {
+  height: 794px;
+  width: 892px;
+}
+
+section.thumbnails .thumbnails-wrapper {
+  height: 749px;
+}
+
+section.thumbnails.graphic-display .thumbanils-wrapper,
+section.thumbnails.illustration-display .thumbanils-wrapper {
+  -ms-grid-columns: 282px 282px 282px;
+      grid-template-columns: 282px 282px 282px;
+  -ms-grid-rows: 235px 235px;
+      grid-template-rows: 235px 235px;
+  grid-gap: 22px;
+  height: 492px;
+}
+
+/*SEKCJA MINIATUR - POJEDYNCZE OBRAZKI*/
+.img-wrapper {
+  height: 233px;
+  width: 282px;
+  margin-bottom: 22px;
+}
+
+.thumbnail-1 {
+  background-image: url("../IMG/MINIATURY_992/KOZA_1x.png");
+}
+
+.thumbnail-2 {
+  background-image: url("../IMG/MINIATURY_992/PIGEON_1x.jpg");
+}
+
+.thumbnail-3 {
+  background-image: url("../IMG/MINIATURY_992/GLASS_1x.jpg");
+}
+
+.thumbnail-4 {
+  background-image: url("../IMG/MINIATURY_992/MEWA_1x.jpg");
+}
+
+.thumbnail-5 {
+  background-image: url("../IMG/MINIATURY_992/URBANEK_1x.jpg");
+}
+
+.thumbnail-6 {
+  background-image: url("../IMG/MINIATURY_992/EABS_1x.jpg");
+}
+
+.thumbnail-7 {
+  background-image: url("../IMG/MINIATURY_992/LASEK_1x.jpg");
+}
+
+.thumbnail-8 {
+  background-image: url("../IMG/MINIATURY_992/ZAMEK_1x.jpg");
+}
+
+section.about,
+section.goat,
+section.pigeon,
+section.ganna-glass,
+section.mewa,
+section.logo-urbanek,
+section.eabs,
+section.lasek,
+section.zamek {
+  width: 892px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.hidden-section img {
+  width: 724px;
+}
+
+section.hidden-section h2 {
+  top: 24px;
+}
+
+section.about {
+  height: 764px;
+  width: 892px;
+}
+
+section.about p.about-hello {
+  top: 21px;
+}
+
+section.about div.about-experience-wrapper {
+  top: 64px;
+}
+
+section.about .portrait-wrap {
+  top: 373px;
+  height: 228px;
+  width: 172px;
+}
+
+section.about .portrait-wrap img {
+  height: 228px;
+  width: 172px;
+}
+
+.portrait-wrap p.portrait-description {
+  display: none;
+}
+
+section.about p.contact-me {
+  top: 623px;
+}
+
+section.goat {
+  height: 1689px;
+}
+
+section.goat p {
+  top: 70px;
+}
+
+section.goat .img-goat {
+  top: 121px;
+}
+
+section.goat .img-cow {
+  display: block;
+  top: 875px;
+}
+
+section.pigeon {
+  height: 945px;
+}
+
+section.pigeon p {
+  top: 70px;
+}
+
+section.pigeon img {
+  top: 121px;
+}
+
+section.ganna-glass {
+  height: 2058px;
+}
+
+section.ganna-glass p {
+  top: 120px;
+  width: 482px;
+}
+
+section.ganna-glass .ganna-glass-img-wrapper {
+  width: 724px;
+  top: 275px;
+  height: 1654px;
+}
+
+section.ganna-glass .ganna-glass-img-wrapper .ganna-glass-white {
+  width: 200px;
+  padding-top: 99px;
+  padding-bottom: 71px;
+}
+
+section.mewa {
+  height: 1862px;
+}
+
+section.mewa .section-mewa-img-wrapper {
+  top: 120px;
+  height: 1627px;
+}
+
+section.logo-urbanek {
+  height: 6307px;
+}
+
+section.logo-urbanek p {
+  top: 120px;
+}
+
+section.logo-urbanek .section-logo-urbanek-img-wrapper {
+  top: 255px;
+  height: 5939px;
+  width: 750px;
+}
+
+section.logo-urbanek img {
+  width: 750px;
+}
+
+section.logo-urbanek div.inside-wrapper.m-full.first, section.logo-urbanek div.inside-wrapper.m-full.second {
+  display: none;
+}
+
+section.logo-urbanek div.inside-wrapper.l-full.first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 750px;
+  height: 402px;
+}
+
+section.logo-urbanek img.urb-5 {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 317px;
+}
+
+section.logo-urbanek img.urb-6 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  width: 413px;
+}
+
+section.logo-urbanek img.urb-8 {
+  padding-top: 14px;
+  height: 695px;
+  width: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section.logo-urbanek div.inside-wrapper.second.l-full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 466px;
+  width: 750px;
+}
+
+section.logo-urbanek img.urb-10 {
+  width: 358px;
+  height: 466px;
+}
+
+section.logo-urbanek img.urb-12 {
+  width: 368px;
+  height: 466px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+section.logo-urbanek img.urb-11, section.logo-urbanek img.urb-13 {
+  width: 545px;
+}
+
+section.eabs {
+  height: 2569px;
+}
+
+section.eabs p {
+  top: 120px;
+}
+
+section.eabs .section-eabs-img-wrapper {
+  position: absolute;
+  top: 211px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 2227px;
+  width: 749px;
+}
+
+.eabs-inner-wrapper-m, .eabs-inner-wrapper-xl {
+  display: none;
+}
+
+.eabs-inner-wrapper-l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 749px;
+  height: 1341px;
+}
+
+section.eabs .l-full.l-4, section.eabs .l-full.l-5, section.eabs .l-full.l-6 {
+  width: 545px;
+  height: auto;
+}
+
+section.eabs .l-full.l-2, section.eabs .l-full.l-3 {
+  height: 130px;
+  width: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section.eabs .l-full.l-5 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+section.eabs p.design-description {
+  top: 2440px;
+  left: 407px;
+  text-align: left;
+}
+
+section.lasek {
+  height: 2548px;
+}
+
+.section-lasek-img-wrapper {
+  top: 251px;
+  height: 2201px;
+  width: 800px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section-lasek-img-wrapper img.l-1, .section-lasek-img-wrapper img.l-3, .section-lasek-img-wrapper img.l-4 {
+  width: 708px;
+}
+
+.section-lasek-img-wrapper img.l-1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.section-lasek-img-wrapper img.lasek-logo-full {
+  height: 246px;
+  width: auto;
+  margin: 80px auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section.zamek {
+  height: 1873px;
+}
+
+section.zamek .section-zamek-img-wrapper {
+  height: 1646px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .thumbnail-1 {
+    background-image: url("../IMG/MINIATURY_992/KOZA_2x.png");
+  }
+  .thumbnail-2 {
+    background-image: url("../IMG/MINIATURY_992/PIGEON_2x.jpg");
+  }
+  .thumbnail-3 {
+    background-image: url("../IMG/MINIATURY_992/GLASS_2x.jpg");
+  }
+  .thumbnail-4 {
+    background-image: url("../IMG/MINIATURY_992/MEWA_2x.jpg");
+  }
+  .thumbnail-5 {
+    background-image: url("../IMG/MINIATURY_992/URBANEK_2x.jpg");
+  }
+  .thumbnail-6 {
+    background-image: url("../IMG/MINIATURY_992/EABS_2x.jpg");
+  }
+  .thumbnail-7 {
+    background-image: url("../IMG/MINIATURY_992/LASEK_2x.jpg");
+  }
+  .thumbnail-8 {
+    background-image: url("../IMG/MINIATURY_992/ZAMEK_2x.jpg");
+  }
+}
+/*# sourceMappingURL=large.css.map */
